@@ -1,5 +1,3 @@
-const indexSections = ['header', 'main', 'advantages', 'service', 'search', 'subscribe', 'footer'];
-const catalogSections = ['header', 'main', 'filter', 'catalog', 'subscribe', 'footer'];
 module.exports = {
   "id": "sedona form",
   "viewports": [

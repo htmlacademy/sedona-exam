@@ -14,6 +14,7 @@
   },
   "homepage": "https://github.com/htmlacademy/sedona-etalon#readme",
   "scripts": {
+    "reference": "node reference.js",
     "test-03": "backstop reference --config=\"backstop-test-03.config.js\" && backstop test --config=\"backstop-test-03.config.js\"",
     "test-04": "backstop reference --config=\"backstop-test-04.config.js\" && backstop test --config=\"backstop-test-04.config.js\"",
     "test-05": "backstop reference --config=\"backstop-test-05.config.js\" && backstop test --config=\"backstop-test-05.config.js\"",
