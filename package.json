@@ -15,15 +15,15 @@
   "homepage": "https://github.com/htmlacademy/sedona-etalon#readme",
   "scripts": {
     "reference": "node reference.js",
-    "test-03": "backstop reference --config=\"backstop-test-03.config.js\" && backstop test --config=\"backstop-test-03.config.js\"",
-    "test-04": "backstop reference --config=\"backstop-test-04.config.js\" && backstop test --config=\"backstop-test-04.config.js\"",
-    "test-05": "backstop reference --config=\"backstop-test-05.config.js\" && backstop test --config=\"backstop-test-05.config.js\"",
-    "test-06": "backstop reference --config=\"backstop-test-06.config.js\" && backstop test --config=\"backstop-test-06.config.js\"",
-    "test-07": "backstop reference --config=\"backstop-test-07.config.js\" && backstop test --config=\"backstop-test-07.config.js\"",
-    "test-08": "backstop reference --config=\"backstop-test-08.config.js\" && backstop test --config=\"backstop-test-08.config.js\"",
-    "test-form": "backstop reference --config=\"backstop-test-form.config.js\" && backstop test --config=\"backstop-test-form.config.js\"",
-    "test-img": "backstop reference --config=\"backstop-test-img.config.js\" && backstop test --config=\"backstop-test-img.config.js\"",
-    "test-ff": "backstop reference --config=\"backstop-test-ff.config.js\" && backstop test --config=\"backstop-test-ff.config.js\""
+    "test-03": "backstop test --config=\"backstop-test-03.config.js\"",
+    "test-04": "backstop test --config=\"backstop-test-04.config.js\"",
+    "test-05": "backstop test --config=\"backstop-test-05.config.js\"",
+    "test-06": "backstop test --config=\"backstop-test-06.config.js\"",
+    "test-07": "backstop test --config=\"backstop-test-07.config.js\"",
+    "test-08": "backstop test --config=\"backstop-test-08.config.js\"",
+    "test-form": "backstop test --config=\"backstop-test-form.config.js\"",
+    "test-img": "backstop test --config=\"backstop-test-img.config.js\"",
+    "test-ff": "backstop test --config=\"backstop-test-ff.config.js\""
   },
   "devDependencies": {
     "@linthtml/linthtml": "^0.9.5",
