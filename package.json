@@ -21,8 +21,9 @@
     "test-06": "backstop test --config=\"backstop-test-06.config.js\"",
     "test-07": "backstop test --config=\"backstop-test-07.config.js\"",
     "test-08": "backstop test --config=\"backstop-test-08.config.js\"",
-    "test-form": "backstop test --config=\"backstop-test-form.config.js\"",
-    "test-img": "backstop test --config=\"backstop-test-img.config.js\"",
+    "html-03": "backstop test --config=\"backstop-html-03.config.js\"",
+    "html-04": "backstop test --config=\"backstop-html-04.config.js\"",
+    "img-01": "backstop test --config=\"backstop-img-01.config.js\"",
     "test-ff": "backstop test --config=\"backstop-test-ff.config.js\""
   },
   "devDependencies": {

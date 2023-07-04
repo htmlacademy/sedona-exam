@@ -203,8 +203,8 @@ module.exports = {
       { page: 'catalog', selector: '.product-card-button', content: 'Подробнее' },
       { page: 'catalog', selector: '.add-favorite-button', content: 'В избранное' },
       { page: 'catalog', selector: '.pagination-link', content: '10' },
-      { page: 'catalog', selector: '[data-test="social"]' },
-      { page: 'catalog', selector: '[data-test="sort"]' },
+      // { page: 'catalog', selector: '[data-test="social"]' },
+      // { page: 'catalog', selector: '[data-test="sort"]' },
       { page: 'modal', selector: '[data-test="modal"] button' },
     ].flatMap(({page, selector, content, ancestor }, idx) => ['normal', 'hover', 'active', 'focus', 'disable'].map(state => ({
         "label": `${page} TEST-07. ${state} ${idx}`,

@@ -89,6 +89,6 @@ module.exports = async (page, scenario, vp) => {
     });
   });
 
-  await page.evaluate(modifyChildrenAmount, defaultChildrenDecreaseMultiplier, defaultChildrenSelectors)
+  await page.evaluate(modifyChildrenAmount, scenario.multiplier || defaultChildrenDecreaseMultiplier, defaultChildrenSelectors)
 
 };

@@ -1,3 +1,8 @@
+/*
+* показываем обязательные поля формы
+* проверяем отправку формы
+* */
+
 module.exports = {
   "id": "sedona form",
   "viewports": [
@@ -19,21 +24,23 @@ module.exports = {
       "referenceUrl": "./reference/index.html",
       showSelectors: ["input[required]"],
       hideSelectors: ["body > *"],
+      selectors: ["[data-test=subscribe]"],
       requireSameDimensions: false,
     },
     {
       "label": "index check required field outline",
-      "url": "./project/catalog.html",
-      "referenceUrl": "./reference/catalog.html",
-      selectors: ["form"],
+      "url": "./project/index.html",
+      "referenceUrl": "./reference/index.html",
+      selectors: ["[data-test=subscribe]"],
       selectorExpansion: true,
       onReadyScript: "highlight-required.js",
     },
     {
-      "label": "index form send",
+      "label": "index empty form send",
       "url": "./project/index.html",
       "referenceUrl": "./reference/index.html",
-      clickSelector: "button[type='submit']",
+      clickSelector: "[data-test=subscribe] button[type='submit']",
+      selectors: ["[data-test=subscribe]"],
       "viewports": [
         {
           "label": "desktop",
@@ -44,11 +51,29 @@ module.exports = {
       postInteractionWait: 1000,
     },
     {
+      "label": "index form send",
+      "url": "./project/index.html",
+      "referenceUrl": "./reference/index.html",
+      clickSelector: "[data-test=subscribe] button[type='submit']",
+      "viewports": [
+        {
+          "label": "desktop",
+          "width": 800,
+          "height": 600,
+        },
+      ],
+      onReadyScript: "fill-email.js",
+      email: "test@test.com",
+      field: "[data-test=subscribe] input",
+      postInteractionWait: 1000,
+    },
+    {
       "label": "catalog check required field",
       "url": "./project/catalog.html",
       "referenceUrl": "./reference/catalog.html",
       showSelectors: ["input[required]"],
       hideSelectors: ["body > *"],
+      selectors: ["form"],
       requireSameDimensions: false,
     },
     {
@@ -63,7 +88,7 @@ module.exports = {
       "label": "catalog form send",
       "url": "./project/catalog.html",
       "referenceUrl": "./reference/catalog.html",
-      clickSelector: "button[type='submit']",
+      clickSelector: "form button[type='submit']",
       "viewports": [
         {
           "label": "desktop",
@@ -107,7 +132,7 @@ module.exports = {
   ],
   fileNameTemplate: '{configId}_{scenarioIndex}_{scenarioLabel}_{selectorIndex}__{viewportIndex}_{viewportLabel}',
   "paths": {
-    "bitmaps_reference": "backstop_data/bitmaps_reference/test-form",
+    "bitmaps_reference": "backstop_data/bitmaps_reference/html-04",
     "bitmaps_test": "backstop_data/bitmaps_test",
     "engine_scripts": "engine_scripts",
     "html_report": "backstop_data/html_report",
