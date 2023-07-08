@@ -9,26 +9,29 @@ module.exports = {
   ],
   "resembleOutputOptions": {
     "ignoreAntialiasing": true,
-    "usePreciseMatching": false
+    "usePreciseMatching": true
   },
   "scenarios": [
     {
       "label": "index TEST-01.",
       "url": "./project/index.html",
       "referenceUrl": "./reference/index.html",
-      misMatchThreshold: 5,
+      misMatchThreshold: .1,
+      requireSameDimension: false
     },
     {
       "label": "catalog TEST-01.",
       "url": "./project/catalog.html",
       "referenceUrl": "./reference/catalog.html",
-      misMatchThreshold: 5,
+      misMatchThreshold: .1,
+      requireSameDimension: false
     },
     {
       "label": "modal TEST-01.",
       "url": "./project/modal.html",
       "referenceUrl": "./reference/modal.html",
-      misMatchThreshold: 5,
+      misMatchThreshold: .1,
+      requireSameDimension: false
     },
   ],
   "paths": {

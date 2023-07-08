@@ -5,8 +5,8 @@
 
 */
 
-const indexSections = ['header', 'main', 'advantages', 'service', 'search', 'subscribe', 'footer'];
-const catalogSections = ['header', 'main', 'filter', 'catalog', 'subscribe', 'footer'];
+const indexSections = ['header', 'advantages', 'service', 'search', 'subscribe', 'footer'];
+const catalogSections = ['header', 'filter', 'catalog', 'subscribe', 'footer'];
 module.exports = {
   "id": "sedona test-05",
   "viewports": [
@@ -18,7 +18,8 @@ module.exports = {
   ],
   "resembleOutputOptions": {
     "ignoreAntialiasing": false,
-    "usePreciseMatching": false
+    "usePreciseMatching": false,
+    "scaleToSameSize": true,
   },
   "onReadyScript": "onReady.js",
   "scenarios": [
